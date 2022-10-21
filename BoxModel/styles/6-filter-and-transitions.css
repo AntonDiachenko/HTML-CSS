@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+/* CSS document for Filter and Transitions Web page */
+
+body {
+    font:1rem Verdana, Helvetica, sans-serif ;
+}
+
+div {
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    margin: 0.5rem;
+    border: 2px solid #2e8b57;
+    background-color: rgb(155, 187, 89);
+    text-align: center;
+}
+
+.colors {
+    position: relative;
+    width: 17rem;
+    height: 17rem;
+}
+
+.colors > div {
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    border: none;
+    width: 10rem;
+    height: 10rem; 
+}
+
+.rgbRed {
+    top: 0;
+    left: 2.5rem;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.rgbGreen {
+    top: 5rem;
+    left: 5rem;
+    background-color: rgb(0, 255, 0, 0.5);
+}
+
+.rgbBlue {
+    top: 5rem;
+    left: 0;
+    background-color: rgb(0, 0, 255, 0.5);
+}
+
+/* border radius */
+.round-corner1 {
+    border-radius: 4px;
+}
+
+.round-corner2 {
+    border-radius: 3px 12px;
+}
+
+.round-corner3 {
+    border-radius: 8px 12px 16px;
+}
+
+.round-corner4 {
+    border-radius: 4px 8px 12px 16px;
+}
+.ellipse {
+    border-radius:50%;
+}
+
+/* box-shadow:horizontal_shadow vertical_shadow blur size(spread) color | inset */
+.box-shadow1 {
+    box-shadow: 3px 3px;
+}
+
+.box-shadow2 {
+    box-shadow: -3px -3px;
+}
+
+.box-shadow3 {
+    box-shadow: 3px 3px 5px;
+}
+
+.box-shadow4 {
+    box-shadow: 4px 4px 5px 4px;
+}
+
+.box-shadow5 {
+    box-shadow: 5px 5px 1px blue;
+}
+
+.box-shadow6 {
+    box-shadow: 0 0 6px red inset;
+}
+
+.box-shadow7 {
+    box-shadow: 0 0 7px 3px green;
+}
+
+.box-shadow8 {
+    box-shadow:initial;
+}
+
+/* Text Shadow */
+.text-shadow1 {
+    text-shadow: 2px 2px 4px black;
+}
+
+.text-shadow2 {
+    text-shadow: 0 0 6px red;
+}
+
+/* linear gradient
+    (goes down | up | to left | diagonally | to right | to bottom)
+    background:linear-gadient (direction, color-stop1, color-stop2, ...)
+*/
+
+.linear-gradient1 {
+    background: linear-gradient(#f00, #00f,orange);
+
+}
+
+.linear-gradient2 {
+    background: linear-gradient(to left, #f00, #00f,orange);
+}
+
+.linear-gradient3 {
+    background: linear-gradient(45deg, #f00, #00f,orange);
+
+}
+
+.linear-gradient4 {
+    background: linear-gradient(to right, #f00, #00f,orange);
+}
+
+.linear-gradient5 {
+    background: linear-gradient(to bottom, #f00, #00f,orange);
+}
+
+.linear-gradient6 {
+    background: linear-gradient(to left, #f00, #ffa500, #ff0, #0f0, #00f, indigo, violet);
+}
+
+.linear-gradient7 {
+    background: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1) );
+}
+
+.linear-gradient8 {
+    background: linear-gradient(#f00, #00f,orange 50%);
+}
+
+/* Radial gradient
+    the default value is ellipse size and is farthest center and position is center.
+    background: radial-gradient(shape size at position, start-color, other-color, ..., last-color)
+    the size parameter defines the size of the gradient (closest-side | farthest-side | closest-center | farthest-center )
+*/
+.radial-gradient1 {
+    background: radial-gradient(#f00, #00f);
+}
+
+.radial-gradient2 {
+    background: radial-gradient(closest-side, #00f, #0f0, #ff0, #000);
+}
+
+.radial-gradient3 {
+    background: radial-gradient(20px 20px, #f00, #00f, #ff0, #0f0);
+}
+
+.radial-gradient4 {
+    background: radial-gradient(#f00 5%, #0f0 15%, #00f 60%);
+}
+
+.radial-gradient5 {
+    background: radial-gradient(circle, #f00, #0f0, #00f);
+}
+
+/* Transition
+    • transition-property specifies the name of the css property the transition effect is for
+    • transition-duration specifies how many seconds or milliseconds the tanstion effect takes to compelte
+    • transition-timing specifies the speed curve of the transition
+    • transition-delay defines when the transition effect will start 
+*/
+
+.transition1 {
+    transition: all 1s ease-in-out;
+}
+
+.transition2 {
+    transition: width 4s, height 2s;
+    transition-delay: 3s;
+}
+
+.transition1:hover, transition2:hover {
+    width: 220px;
+    height: 160px;
+}
+
+/* The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew elements */
+/* the translate method moves an element from the current position to another (x-axis and y-axis) */
+
+.theTransition > div {
+    width: 5rem;
+    height: 5rem;
+    transition: all 1s ease-in-out;
+}
+
+.transform1:hover {
+    transform: translate(10px, -10px);
+}
+
+/* rotate method accepts positive and negative (counter-clockwize) degree values */
+.transform2:hover {
+    transform: rotate(360deg);
+}
+
+/* scale method increases or decreases the size of an element */
+.transform3:hover {
+    transform:scale(1.1, 1.1);
+}
+
+/* skew method turns an element in a given angle */
+.transform4:hover {
+    transform:skew(-45deg, 10deg);
+}
+
+/* matrix method takes six parameters which allows you to rotate, scale, translate, and skew an element */
+.transform5:hover {
+    transform:matrix(0.85, 0.5, -0.1, 0.85, 5, 10);
+}
+
+/* rotateX method rotates around its x-axis at a given angle degree*/
+.transform6:hover {
+    transform:rotateX(360deg);
+}
+
+/* rotateY method rotates around its y-axis at a given angle degree*/
+.transform7:hover {
+    transform: rotateY(360deg);
+}
+
+.theBackground div {
+    width: 160px;
+    height: 160px;
+    background-image: url('../images/bg-middle.png');
+}
+
+.theBackground > .background1 {
+    background-size: 100% 100%;
+}
+
+.theBackground > .background2 {
+    background:
+        url('../images/bg-front.png'),
+        url('../images/bg-middle.png'),
+        url('../images/bg-back.png');
+    background-size: 100% 100%;
+}
+
+/* the background-origin has 3 values: padding-box (default value), border-box, and content-box 
+    • padding-box starts from the upper left corner of the padding edge
+    • border-box starts from the upper left corner of the border
+    • content-box starts from the upper left corner of the content
+*/
+
+.theBackground > .background3 {
+    background: url('../images/bg-back.png');
+    background-clip: content-box ;
+    border: 10px groove #000080;
+    padding: 1rem;
+    background-size: 100% 100%;
+}
+
+.theBackground > .background4 {
+    background: url('../images/bg-back.png');
+    background-clip: padding-box ;
+    border: 10px inset darkgreen;
+    padding: 1rem;
+    background-size: 100% 100%;
+}
+
+.theBackground > .background5 {
+    background: url('../images/bg-back.png');
+    background-clip: border-box ;
+    border: 10px outset #ff8000;
+    padding: 1rem;
+    background-size: 100% 100%;
+}

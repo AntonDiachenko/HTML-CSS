@@ -1,0 +1,40 @@
+
+/* span 2 columns */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.container > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container > article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    padding: 0 20px 20px;
+}
+
+.text > button {
+    background-color: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.container > article:nth-child(1) {
+    grid-column: span 1;
+}
+
+button:hover {
+    background-color: orange;
+    color: darkgreen;
+    /* font-size: 1rem; */
+    box-shadow: 2px 3px 4px darkgreen;
+}

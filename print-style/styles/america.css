@@ -1,0 +1,106 @@
+﻿@charset "utf-8";
+/* CSS Document America Web page */
+/* Developed by: Khattar Daou */
+/* Script Date: April 26, 2022 */
+
+#container {
+    width:775px;
+    color:#000080;
+    background-color:beige;
+    font-size:11px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#banner {
+    width: 775px;
+    height:100px;
+    margin-top:0;
+    margin-bottom:10px;
+    border:2px solid #000080;
+    text-align:center;
+    font-weight:bold;
+    font-size:24px;
+    background-image:url('../broadway_images/Flag.gif');
+    background-repeat:repeat-x;
+    color:#000080;
+    background-color:#fff;
+}
+
+#sidebar {
+    width:300px;
+    overflow:hidden;
+    border:3px inset #f00;
+    padding:0.5em;
+    padding-left:1em;
+    background-image:url('../broadway_images/Curtains.jpg');
+    background-repeat:no-repeat;
+    font-weight:bold;
+    color:#fff;
+    background-color:#000;
+    float:left;
+}
+
+#sidebar h3 {
+    width:250px;
+    padding:0.2em;
+    text-align:center;
+    color:#fff;
+    background-color:#000080;
+}
+
+#salebox {
+    position:absolute;
+    top:20px;
+    left:20px;
+    width:150px;
+    height:100px;
+    overflow:auto;
+    z-index:2
+}
+
+#salebox p {
+    margin:0;
+    color:orange;
+    font-size:14px;
+    font-weight:bold;
+}
+
+#main {
+    width:440px;
+    float:right;
+}
+
+#main h2 {
+    margin-top:0;
+    padding-top:0.3em;
+    height:60px;
+    text-align:center;
+    color:#fff;
+    background-color:#000080;
+}
+
+#main h3 {
+    margin:0;
+    padding:0.5em;
+    text-align:center;
+    color:#fff;
+    background-color:#f00;
+}
+
+#footer {
+    margin-top:0.5em;
+    border:2px inset #000080;
+    padding:0.5em;
+    height:50px;
+    color:#000;
+    word-spacing:0.2em;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    clear:both;
+    text-align:center;
+}
+
+
+
+

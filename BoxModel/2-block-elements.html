@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block elements</title>
+    <style>
+        .container {
+            width: 350px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: skyblue;
+        }
+
+        .box2 {
+            background-color: lime;
+        }
+
+        .highlight {
+            background-color: yellow;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .highlight2 {
+            width: 100px;
+            background-color: lightgray;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            display: inline-block;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">Hello</div>
+        <div class="box2">World</div>
+    </div>
+    <p>Hello <span class="highlight">world</span>, I am demonstrating an inline
+        element.</p>
+
+    <div class="wrapper">
+        Hello <span class="highlight2">world</span>, I am demonstrating an inline-block
+        element.
+    </div>
+</body>
+
+</html>

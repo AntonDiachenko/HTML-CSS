@@ -1,0 +1,124 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+/*
+   Assignment 01
+   Developed By: Anton Diachenko
+   Developed Date: May 10, 2022 
+   Filename: time-zones.css
+   This file contains styles used in the worldTime.html file.
+*/
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+#container {
+   width: 800px;
+   margin: 0 auto;
+}
+
+#headbar {
+   width: 800px;
+   margin-bottom: 1rem;
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: blue;
+   letter-spacing: 2px;
+}
+
+#place1 {
+   position: absolute;
+   margin: 14rem 0 0 10rem;
+   z-index: 1000;
+}
+
+#place2 {
+   position: absolute;
+   margin: 10rem 0 0 23rem;
+   z-index: 1000;
+}
+
+#place3 {
+   position: absolute;
+   margin: 12rem 0 0 14rem;
+   z-index: 1000;
+}
+
+#place4 {
+   position: absolute;
+   margin: 13rem 0 0 5rem;
+   z-index: 1000;
+}
+
+
+#place5 {
+   position: absolute;
+   margin: 23rem 0 0 42rem;
+   z-index: 1000;
+}
+
+#place6 {
+   position: absolute;
+   margin: 12rem 0 0 42rem;
+   z-index: 1000;
+}
+
+#place1, #place2, #place3, 
+#place4, #place5, #place6 {
+   width: 4rem;
+   border-radius: 7px;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+   width: 800px;
+   border-collapse: separate;
+   border-spacing: 1rem;
+}
+
+td, th {
+   border: 1px solid black;
+}
+
+th {
+   height: 2rem;
+   font-family:'Courier New', Courier, monospace;
+   font-size: 10pt;
+}
+
+td {
+   height: 8rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 10pt;
+   padding: 0 1rem 0 1rem;
+}
+
+
+
+#name1, #Houston_Office, #place1 {
+   background-color: rgba(255, 228, 196, 75%);
+}
+
+#name2, #London_Office, #place2 {
+   background-color: rgb(226, 109, 105, 75%);
+}
+
+#name3, #NY_Office, #place3 {
+   background-color: rgb(135, 116, 187, 75%);
+}
+
+#name4, #Seattle_Office, #place4 {
+   background-color: rgb(158, 179, 171, 75%);
+}
+
+#name5, #Sydney_Office, #place5 {
+   background-color: rgb(219, 223, 224, 75%);
+}
+
+#name6, #Tokyo_Office, #place6 {
+   background-color: rgb(196, 144, 184, 75%);
+}
+
+

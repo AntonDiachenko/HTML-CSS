@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+div {
+    color: #fff;
+}
+
+.tweets {
+    background: #a0ddce;
+}
+
+.replies {
+    background: #f6d02f;
+}
+
+.search {
+    background: #6a7a8a;
+}
+
+.messages {
+    background: #52abe5;
+}
+
+/* apply some css3 to the app-layout container */
+.app-layout {
+    /* 1. set the display property to grid */
+    display: grid;
+    /* 2. Divide the container element into four elements, 
+	each column is 1fr (one fraction) of the free space within the grid container */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* 3. create one row and set the height to be 100vh (Full Viewport Height) */
+    grid-template-rows: 100vh;
+}

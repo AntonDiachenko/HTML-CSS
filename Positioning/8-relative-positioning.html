@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Relative Positioning</title>
+    <style>
+        span {
+            color:green;
+        }
+
+        .super {
+            position: relative;
+            top:-6px;
+        }
+
+        .sub {
+            position: relative;
+            top: 6px;
+        }
+
+        .shift-left {
+            position: relative;
+            left: -10px;
+            color: red;
+        }
+
+        .shift-right {
+            position: relative;
+            right: -30px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>The text at the end of this <sup>sentence</sup> is a <span class="super">Super Scripted</span> </p>
+    <p>The text at the end of this <sub>sentence</sub> is a <span class="sub">Sub Scripted</span> </p>
+    <p>The text at the end of this sentence is a <span class="shift-left">Shifted Left</span> </p>
+    <p>The text at the end of this sentence is a <span class="shift-right">Shifted Right</span> </p>
+</body>
+</html>

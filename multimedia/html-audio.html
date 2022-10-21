@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML audio element</title>
+    <style>
+        body {
+            background-color:#fff;
+            color:#00f;
+            font-family:Tahoma, Geneva, Verdana, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <p>This page has a sound loop added to it using the &lt;audio&gt; element.</p>
+
+    <!-- Audio attributes supported by HTML 
+        1. autoplay
+        2. controls
+        3. loop
+        4. preload
+        5. src
+        6. type
+    -->
+
+    <audio controls="controls" autoplay="autoplay">
+        <source src="assets/soundloop.ogg" type="audio/ogg" />
+        <source src="assets/soundloop.mp3" type="audio/mp3" />
+        <a href="soundloop.mp3">Download the Audio File</a> (MP3)
+    </audio>
+
+    <audio controls autoplay loop>
+        <source src="assets/audios/audio.mp3" type="audio/mp3" />
+        <source src="assets/audios/audio.m4a" type="audio/aac" />
+        <source src="assets/audios/audio.ogg" type="audio/ogg" />
+    </audio>
+</body>
+</html>

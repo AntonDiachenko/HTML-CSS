@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-float.html</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 1rem;
+            background: #ccc;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* 2. Inline-Block
+The inline-block display type offered several advantages compared with floating layouts, including greater simplicity and no need for clearing floats. Moreover, the layout won’t break when elements have different heights as they would with floating elements. The vertical-align property
+can be used to specify how elements align when their heights differ.
+        */
+        .inline {
+            display: inline-block;
+            vertical-align: top;
+        }        
+    </style>
+</head>
+
+<body>
+    <!-- 1. Float  -->
+    <div class="left box">One</div>
+    <div class="left box">Two</div>
+    <div class="clear">Three</div>
+    <div class="left box">Four</div>
+    <div class="left box">Five</div>
+    <div class="clear">Six</div>
+
+    <!-- 2. Inline-Block -->
+    <div>
+        <div class="inline box">Seven</div>
+        <div class="inline box">Eight</div>
+    </div>
+
+    <div>
+        <div class="inline box">Nine</div>
+        <div class="inline box">Ten</div>
+    </div>
+
+
+</body>
+
+</html>

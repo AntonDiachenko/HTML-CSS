@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    max-width: 1024px;
+    margin: 50px auto;
+}
+
+
+
+.box {
+	color: #fff;
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 5em;
+	padding: 20px;
+}
+
+
+.box-1 {
+	background: cornflowerblue;
+}
+
+.box-2 {
+	background: crimson;
+}
+
+.box-3 {
+	background: lightseagreen;
+}
+
+.box-4 {
+	background: darkorange;
+}
+
+.box-5 {
+	background: limegreen;
+}
+
+.box-6 {
+	background: darkorchid;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+</head>
+
+<body>
+    <h1>Head Image Map</h1>
+    <figure>
+        <img usemap="#head-map" src="head_images/face.png" alt="Image of human head" title="Image of human head" />
+        <figcaption>Image of human head</figcaption>
+    </figure>
+
+    <map id="head-map" name="head-map">
+        <area 
+                shape="circle" 
+                coords="87, 144, 25"
+                href="human-eye.html"
+                alt="Human Eye"
+                title="Left Human Eye" />
+
+            <area 
+                shape="circle" 
+                coords="160, 144, 25"
+                href="human-eye.html"
+                alt="Human Eye"
+                title="Right Human Eye" />
+
+            <area shape="rect"
+                coords="102,177,149,210"
+                href="human-nose.html"
+                alt="Nose"
+                title="Nose" />
+
+            <area 
+                shape="rect"
+                coords="94,220,159,248"
+                href="human-mouth.html"
+                alt="Human mouth"
+                title="Human mouth" />
+
+            <area 
+                shape="poly"
+                coords="23,133,42,132,51,196,31,195,18,145"
+                href="human-ear.html"
+                alt="Left Ear"
+                title="Left Ear" />
+    </map>
+</body>
+
+</html>

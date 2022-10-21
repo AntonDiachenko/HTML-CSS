@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9-using auto-fill keyword.html</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 5rem);
+            grid-template-rows: repeat(2, minmax(3rem, auto));
+            /* specify the sizing for implicit grid rows */
+            grid-auto-rows: 5rem;
+            gap: 5px;            
+        }
+
+        .item {
+            background: lightgray;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5 - lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime consequatur at dolor pariatur, magni, dolorum explicabo autem facere quod optio eius! Adipisci temporibus numquam illo, accusantium iure dignissimos minus repellendus.</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</body>
+
+</html>
